@@ -1,0 +1,380 @@
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open Sans"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bitter"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css" />
+    <link rel="stylesheet" href="desserts.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="headerAccess.css" />
+    <link rel="stylesheet" href="hoveringMechanics.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Sugar Rush Alert! | ImPeckable</title>
+  </head>
+
+  <body>
+     <div class="costHeader pointer" id="header">
+      <label class="pointer"
+        ><i
+          class="fa fa-shopping-cart"
+          id="cartCheckout"
+          onclick="goToCheckoutNow()"
+        ></i
+        >&nbsp;Total: $</label
+      ><label id="costLabel" class="pointer"></label>
+    </div>
+    <div class="dropdown" id="dropDiv">
+      <ul id="dropList"></ul>
+    </div>
+    <nav class="navtest">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="appetizers.html">Appetizers</a></li>
+        <li><a href="entrees.html">Entrees</a></li>
+        <li><a href="desserts.html">Desserts</a></li>
+        <li><a href="drinks.html">Drinks</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="referencepage.html">Reference Page</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </nav>
+<div class="dropdownMenu" id="dropDivMenu">
+    </div>
+    </div>
+    <br>
+    <div class="scroll-box">
+      <img src="../Images/dessertsBG.png" class="scroll-img override" width="100%">
+  </div>
+
+    <h1 class="app">DESSERTS</h1>
+    <hr />
+    <div class="confirm beigebg">
+      <div class="cardOrder" onclick="openApfelkuchen()">
+        <img src="../Images/apfelkuchen.jpg" class="image-dims" />
+        <div>
+          <h1 class="foodHeading">APFELKUCHEN</h1>
+          <p class="foodDescription">
+            A delicious delight of an apple cake often made with Granny Smith
+            apples.
+            <br>
+            <button class="learn-more-btn" onclick="toggleLearnMore(this)">Learn More</button>
+            <span class="learn-more-content">
+            Fun Fact: The German name literally translates to "apple cake", and many believe that 
+            some varieties taste better the day after they're baked.
+            </span>
+          </p>
+          <br />
+          <p class="foodPrice">$7.99, 2 pc</p>
+          <br /><br />
+          <p class="foodAllergies">Contains: gluten, dairy, eggs</p>
+        </div>
+      </div>
+      <br />
+      <div class="apfelkuchenDiv" id="apfelkuchenDisplay">
+        <label id="apfelkuchenConfirm" class="foodConfirm"
+          >Confirm Purchase of Apfelkuchen for $7.99?</label
+        >
+
+        <button class="btnIncDec" onclick="decrementApfelkuchen()">-</button>
+        <input id="quantityApfelkuchen" class="howMany" readonly value="1" />
+        <button class="btnIncDec" onclick="incrementApfelkuchen()">+</button>
+
+        <button id="apfelkuchenYes" class="foodButton" onclick="apfelkuchen()">
+          Yes
+        </button>
+        <button
+          id="apfelkuchenNo"
+          class="foodButton"
+          onclick="closeApfelkuchen()"
+        >
+          No
+        </button>
+      </div>
+    </div>
+    <hr />
+    <div class="confirm">
+      <div class="cardOrder" onclick="openMalabi()">
+        <img src="../Images/malabi.jpg" class="image-dims" />
+        <div>
+          <h1 class="foodHeading">MALABI</h1>
+          <p class="foodDescription">
+            A creamy dessert flavored with rose water, pistachios, and
+            pomegranate seeds.
+            <br>
+            <button class="learn-more-btn" onclick="toggleLearnMore(this)">Learn More</button>
+            <span class="learn-more-content">
+            Fun Fact: Legend has it that muhallebi was introduced to Arab cuisine in the late seventh century 
+            by a Persian cook who served it to an Arab general named Al-Muhallab ibn Abi Sufra. 
+            He enjoyed it so much, he named it after himself!
+            </span>
+          </p>
+          <br />
+          <p class="foodPrice">$6.99, 2 pc</p>
+          <br /><br />
+          <p class="foodAllergies">Contains: dairy, nuts</p>
+        </div>
+      </div>
+      <br />
+      <div class="malabiDiv" id="malabiDisplay">
+        <label id="malabiConfirm" class="foodConfirm"
+          >Confirm Purchase of Malabi for $6.99?</label
+        >
+
+        <button class="btnIncDec" onclick="decrementMalabi()">-</button>
+        <input id="quantityMalabi" class="howMany" readonly value="1" />
+        <button class="btnIncDec" onclick="incrementMalabi()">+</button>
+
+        <button id="malabiYes" class="foodButton" onclick="malabi()">
+          Yes
+        </button>
+        <button id="malabiNo" class="foodButton" onclick="closeMalabi()">
+          No
+        </button>
+      </div>
+    </div>
+
+    <hr />
+    <div class="confirm beigebg">
+      <div class="cardOrder" onclick="openTresLeches()">
+        <img src="../Images/tresleches.jpg" class="image-dims" />
+        <div>
+          <h1 class="foodHeading">TRES LECHES CAKE</h1>
+          <p class="foodDescription">
+            A sponge cake soaked in three types of milk (condensed milk and
+            evaporated milk), topped with whipped cream.
+            <br>
+            <button class="learn-more-btn" onclick="toggleLearnMore(this)">Learn More</button>
+            <span class="learn-more-content">
+            Fun Fact: The name translates to "Three Milks Cake", and the combination allow it to have
+            its unique texture and flavor. It is soaked in liquid to preserve and/or moisten it. 
+            </span>
+          </p>
+          <br />
+          <p class="foodPrice">$6.99, 2 pc</p>
+          <br /><br />
+          <p class="foodAllergies">Contains: dairy, gluten, eggs</p>
+        </div>
+      </div>
+      <br />
+      <div class="treslechesDiv" id="treslechesDisplay">
+        <label id="treslechesConfirm" class="foodConfirm"
+          >Confirm Purchase of Tres Leches Cake for $6.99?</label
+        >
+
+        <button class="btnIncDec" onclick="decrementTresLeches()">-</button>
+        <input id="quantityTresLeches" class="howMany" readonly value="1" />
+        <button class="btnIncDec" onclick="incrementTresLeches()">+</button>
+
+        <button id="treslechesYes" class="foodButton" onclick="tresLeches()">
+          Yes
+        </button>
+        <button
+          id="treslechesYes"
+          class="foodButton"
+          onclick="closeTresLeches()"
+        >
+          No
+        </button>
+      </div>
+    </div>
+    <hr />
+    <div class="confirm">
+      <div class="cardOrder" onclick="openKulfi()">
+        <img src="../Images/kulfi.jpg" class="image-dims" />
+        <div>
+          <h1 class="foodHeading">KULFI</h1>
+          <p class="foodDescription">
+            A dense and creamy frozen dessert made with milk, sugar, and spices
+            like cardamom and saffron.
+            <br>
+            <button class="learn-more-btn" onclick="toggleLearnMore(this)">Learn More</button>
+            <span class="learn-more-content">
+            Fun Fact: It was believed to be served to royalty in the Mughal Empire, and the 
+            slow cooking process of kulfi provides its rich, dense, and creamy flavors and textures. 
+            </span>
+          </p>
+          <br />
+          <p class="foodPrice">$2.99, 2 pc</p>
+          <br /><br />
+          <p class="foodAllergies">Contains: dairy, nuts</p>
+        </div>
+      </div>
+      <br />
+      <div class="kulfiDiv" id="kulfiDisplay">
+        <label id="kulfiConfirm" class="foodConfirm"
+          >Confirm Purchase of Kulfi for $2.99?</label
+        >
+
+        <button class="btnIncDec" onclick="decrementKulfi()">-</button>
+        <input id="quantityKulfi" class="howMany" readonly value="1" />
+        <button class="btnIncDec" onclick="incrementKulfi()">+</button>
+
+        <button id="kulfiYes" class="foodButton" onclick="kulfi()">Yes</button>
+        <button id="kulfiYes" class="foodButton" onclick="closeKulfi()">
+          No
+        </button>
+      </div>
+    </div>
+    <hr />
+
+    <div class="confirm beigebg">
+      <div class="cardOrder" onclick="openFlan()">
+        <img src="../Images/flan.jpg" class="image-dims" />
+        <div>
+          <h1 class="foodHeading">FLAN</h1>
+          <p class="foodDescription">
+            A caramel custard dessert with a silky smooth texture.
+            <br>
+            <button class="learn-more-btn" onclick="toggleLearnMore(this)">Learn More</button>
+            <span class="learn-more-content">
+            Fun Fact: It used to be more of a savory dessert, and the word "flan" came from the 
+            French word "flaon", which comes from the Latin word "flado", meaning flat cake
+            or custard.
+            </span>
+          </p>
+          <br />
+          <p class="foodPrice">$5.99, 1 pc</p>
+          <br /><br />
+          <p class="foodAllergies">Contains: dairy, eggs</p>
+        </div>
+      </div>
+      <br />
+      <div class="flanDiv" id="flanDisplay">
+        <label id="flanConfirm" class="foodConfirm"
+          >Confirm Purchase of Flan for $5.99?</label
+        >
+
+        <button class="btnIncDec" onclick="decrementFlan()">-</button>
+        <input id="quantityFlan" class="howMany" readonly value="1" />
+        <button class="btnIncDec" onclick="incrementFlan()">+</button>
+
+        <button id="flanYes" class="foodButton" onclick="flan()">Yes</button>
+        <button id="flanYes" class="foodButton" onclick="closeFlan()">
+          No
+        </button>
+      </div>
+    </div>
+    <hr />
+    <div class="confirm">
+      <div class="cardOrder" onclick="openSesame()">
+        <img src="../Images/sesame.jpg" class="image-dims" />
+        <div>
+          <h1 class="foodHeading">SESAME BALLS</h1>
+          <p class="foodDescription">
+            A crisp and crunchy exterior that reveals a chewy and exquisite
+            filling.
+            <br>
+            <button class="learn-more-btn" onclick="toggleLearnMore(this)">Learn More</button>
+            <span class="learn-more-content">
+            Fun Fact: Sesame balls are very popular in China, where they have many names. 
+            They can contain a variety of fillings such as pastes like red beans. Their 
+            golden color and round shape are lucky, the sweetiness showcases happiness,
+            and the fact that they expand many times in size is a metaphor that 
+            states that some ventures will bring back large returns and fortunes.
+            </span>
+          </p>
+          <br />
+          <p class="foodPrice">$3.99, 5 pc</p>
+          <br /><br />
+          <p class="foodAllergies">Contains: dairy, nuts</p>
+        </div>
+      </div>
+      <br />
+      <div class="sesameDiv" id="sesameDisplay">
+        <label id="sesameConfirm" class="foodConfirm"
+          >Confirm Purchase of Sesame Balls for $3.99?</label
+        >
+
+        <button class="btnIncDec" onclick="decrementSesame()">-</button>
+        <input id="quantitySesame" class="howMany" readonly value="1" />
+        <button class="btnIncDec" onclick="incrementSesame()">+</button>
+
+        <button id="sesameYes" class="foodButton" onclick="sesame()">
+          Yes
+        </button>
+        <button id="sesameYes" class="foodButton" onclick="closeSesame()">
+          No
+        </button>
+      </div>
+    </div>
+    <hr />
+    <div class = "center">
+    <p class="allergens">
+      Please ask attendants or call for more allergen information.
+    </p>
+  </div>
+    <br />
+    <hr />
+
+    <button class="open-button" onclick="toggleTextBox()"><i class="fas fa-clipboard-list" style="font-size: 50px; cursor: pointer;"></i></button>
+    <div class="quiz" id="quiz" onclick="toggleTextBox()">
+  <div class="quiz-box" onclick="event.stopPropagation();">
+    <h1><i class="fas fa-utensils"></i> What Should You Order?</h1>
+    
+    <div class="quiz-step">
+      <h2>1. Select your preferred cuisine:</h2>
+      <div class="button-group">
+        <button onclick="q1Asian()" class="btnsQuiz"><i class="fas fa-dragon"></i> Asian</button>
+        <button onclick="q1European()" class="btnsQuiz"><i class="fas fa-cheese"></i> European</button>
+        <button onclick="q1LatinAmerican()" class="btnsQuiz"><i class="fas fa-pepper-hot"></i> Latin American</button>
+        <button onclick="q1Indian()" class="btnsQuiz"><i class="fas fa-spa"></i> Indian</button>
+        <button onclick="q1MiddleEastern()" class="btnsQuiz"><i class="fas fa-mortar-pestle"></i> Middle Eastern</button>
+      </div>
+      <label id="question1Result" class="selection-confirmation"></label>
+    </div>
+
+    <div class="quiz-step">
+      <h2>2. Choose your course:</h2>
+      <div class="button-group">
+        <button onclick="q2Appetizer()" class="btnsQuiz"><i class="fas fa-utensil-spoon"></i> Appetizer</button>
+        <button onclick="q2Entree()" class="btnsQuiz"><i class="fas fa-drumstick-bite"></i> Entree</button>
+        <button onclick="q2Dessert()" class="btnsQuiz"><i class="fas fa-ice-cream"></i> Dessert</button>
+      </div>
+      <label id="question2Result" class="selection-confirmation"></label>
+    </div>
+
+    <button class="enterBtn" onclick="enterQuiz()">Get My Recommendations <i class="fas fa-arrow-right"></i></button>
+
+    <div id="resultOfQuiz">
+      <h3 id="youShouldGet"></h3>
+      <div class="recommendations-grid">
+        <div class="recommendation-item">
+          <img width="100%" class="action" id="img1" onclick="goToSite()">
+        </div>
+        <div class="recommendation-item">
+          <img width="100%" class="action" id="img2" onclick="goToSite()">
+        </div>
+        <div class="recommendation-item">
+          <img width="100%" class="action" id="img3" onclick="goToSite()">
+        </div>
+      </div>
+    </div>
+
+    <button class="close-button" onclick="toggleTextBox()"><i class="fas fa-times"></i> Close Quiz</button>
+  </div>
+</div>
+
+  </div>
+    <div class="contact-info">
+      <label
+        ><a
+          href="https://mail.google.com/mail/?view=cm&to=impeckableatlanta@gmail.com&su=Support%20Request&body=Welcome%20to%20our%20restaurant!%0A%0APlease%20let%20us%20know%20what%20issues%20you%20are%20facing."
+          target="_blank"
+          >impeckableatlanta@gmail.com</a
+        ></label
+      ><label>|</label><label>675 Peachmont Avenue, Alpharetta, GA</label
+      ><label>|</label><label>+1 (678) 843-1535</label>
+    </div>
+    <script src="sketch.js"></script>
+  </body>
+</html>
