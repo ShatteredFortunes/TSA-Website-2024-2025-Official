@@ -1060,7 +1060,7 @@ function enterQuiz() {
             document.getElementById("img1").style.display = "block";
             document.getElementById("img2").style.display = "none";
             document.getElementById("img3").style.display = "none";
-            document.getElementById("img1").src = "../Images/scallion.jpg";
+            document.getElementById("img1").src = "scallion.jpg";
             document.getElementById("img2").src = "";
             document.getElementById("img3").src = "";
         } else if (question2 == "Entree") {
@@ -1068,15 +1068,15 @@ function enterQuiz() {
             document.getElementById("img1").style.display = "block";
             document.getElementById("img2").style.display = "block";
             document.getElementById("img3").style.display = "block";
-            document.getElementById("img1").src = "../Images/japchae.jpg";
-            document.getElementById("img2").src = "../Images/thaired.jpg";
-            document.getElementById("img3").src = "../Images/buddhas.jpg";
+            document.getElementById("img1").src = "japchae.jpg";
+            document.getElementById("img2").src = "thaired.jpg";
+            document.getElementById("img3").src = "buddhas.jpg";
         } else if (question2 == "Dessert") {
             document.getElementById("youShouldGet").innerHTML = "You should get Sesame Balls!";
             document.getElementById("img1").style.display = "block";
             document.getElementById("img2").style.display = "none";
             document.getElementById("img3").style.display = "none";
-            document.getElementById("img1").src = "../Images/sesame.jpg";
+            document.getElementById("img1").src = "sesame.jpg";
             document.getElementById("img2").src = "";
             document.getElementById("img3").src = "";
         }
@@ -1086,7 +1086,7 @@ function enterQuiz() {
             document.getElementById("img1").style.display = "block";
             document.getElementById("img2").style.display = "none";
             document.getElementById("img3").style.display = "none";
-            document.getElementById("img1").src = "../Images/brusapps.jpg";
+            document.getElementById("img1").src = "brusapps.jpg";
             document.getElementById("img2").src = "";
             document.getElementById("img3").src = "";
         } else if (question2 == "Entree") {
@@ -1094,7 +1094,7 @@ function enterQuiz() {
             document.getElementById("img1").style.display = "block";
             document.getElementById("img2").style.display = "none";
             document.getElementById("img3").style.display = "none";
-            document.getElementById("img1").src = "../Images/ratatouille.jpg";
+            document.getElementById("img1").src = "ratatouille.jpg";
             document.getElementById("img2").src = "";
             document.getElementById("img3").src = "";
         } else if (question2 == "Dessert") {
@@ -1102,8 +1102,8 @@ function enterQuiz() {
             document.getElementById("img1").style.display = "block";
             document.getElementById("img2").style.display = "block";
             document.getElementById("img3").style.display = "none";
-            document.getElementById("img1").src = "../Images/apfelkuchen.jpg";
-            document.getElementById("img2").src = "../Images/flan.jpg";
+            document.getElementById("img1").src = "apfelkuchen.jpg";
+            document.getElementById("img2").src = "flan.jpg";
             document.getElementById("img3").src = "";
         }
     } else if (question1 == "Latin American") {
@@ -1112,7 +1112,7 @@ function enterQuiz() {
             document.getElementById("img1").style.display = "block";
             document.getElementById("img2").style.display = "none";
             document.getElementById("img3").style.display = "none";
-            document.getElementById("img1").src = "../Images/torapps.jpg";
+            document.getElementById("img1").src = "torapps.jpg";
             document.getElementById("img2").src = "";
             document.getElementById("img3").src = "";
         } else if (question2 == "Entree") {
@@ -1120,15 +1120,15 @@ function enterQuiz() {
             document.getElementById("img1").style.display = "block";
             document.getElementById("img2").style.display = "block";
             document.getElementById("img3").style.display = "none";
-            document.getElementById("img1").src = "../Images/chiles.jpg";
-            document.getElementById("img2").src = "../Images/arepas.png";
+            document.getElementById("img1").src = "chiles.jpg";
+            document.getElementById("img2").src = "arepas.png";
             document.getElementById("img3").src = "";
         } else if (question2 == "Dessert") {
             document.getElementById("youShouldGet").innerHTML = "You should get Tres Leches Cake!";
             document.getElementById("img1").style.display = "block";
             document.getElementById("img2").style.display = "none";
             document.getElementById("img3").style.display = "none";
-            document.getElementById("img1").src = "../Images/tresleches.jpg";
+            document.getElementById("img1").src = "tresleches.jpg";
             document.getElementById("img2").src = "";
             document.getElementById("img3").src = "";
         }
@@ -1138,7 +1138,7 @@ function enterQuiz() {
             document.getElementById("img1").style.display = "block";
             document.getElementById("img2").style.display = "none";
             document.getElementById("img3").style.display = "none";
-            document.getElementById("img1").src = "../Images/samapps.jpg";
+            document.getElementById("img1").src = "samapps.jpg";
             document.getElementById("img2").src = "";
             document.getElementById("img3").src = "";
         } else if (question2 == "Entree") {
@@ -1146,7 +1146,7 @@ function enterQuiz() {
             document.getElementById("img1").style.display = "block";
             document.getElementById("img2").style.display = "none";
             document.getElementById("img3").style.display = "none";
-            document.getElementById("img1").src = "../Images/chole.JPG";
+            document.getElementById("img1").src = "chole.JPG";
             document.getElementById("img2").src = "";
             document.getElementById("img3").src = "";
         } else if (question2 == "Dessert") {
@@ -1154,7 +1154,7 @@ function enterQuiz() {
             document.getElementById("img1").style.display = "block";
             document.getElementById("img2").style.display = "none";
             document.getElementById("img3").style.display = "none";
-            document.getElementById("img1").src = "../Images/kulfi.jpg";
+            document.getElementById("img1").src = "kulfi.jpg";
             document.getElementById("img2").src = "";
             document.getElementById("img3").src = "";
         }
@@ -1164,7 +1164,7 @@ function enterQuiz() {
             document.getElementById("img1").style.display = "block";
             document.getElementById("img2").style.display = "none";
             document.getElementById("img3").style.display = "none";
-            document.getElementById("img1").src = "../Images/fandhapps.jpg";
+            document.getElementById("img1").src = "fandhapps.jpg";
             document.getElementById("img2").src = "";
             document.getElementById("img3").src = "";
         } else if (question2 == "Entree") {
@@ -1172,7 +1172,7 @@ function enterQuiz() {
             document.getElementById("img1").style.display = "block";
             document.getElementById("img2").style.display = "none";
             document.getElementById("img3").style.display = "none";
-            document.getElementById("img1").src = "../Images/koshary.jpg";
+            document.getElementById("img1").src = "koshary.jpg";
             document.getElementById("img2").src = "";
             document.getElementById("img3").src = "";
         } else if (question2 == "Dessert") {
@@ -1180,7 +1180,7 @@ function enterQuiz() {
             document.getElementById("img1").style.display = "block";
             document.getElementById("img2").style.display = "none";
             document.getElementById("img3").style.display = "none";
-            document.getElementById("img1").src = "../Images/malabi.jpg";
+            document.getElementById("img1").src = "malabi.jpg";
             document.getElementById("img2").src = "";
             document.getElementById("img3").src = "";
         }
